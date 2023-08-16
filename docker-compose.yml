@@ -19,7 +19,6 @@ services:
         depends_on:
             - mongodb
         restart: unless-stopped
-        env_file: .env
         ports:
             - ${PORT}:${PORT}
         environment:
